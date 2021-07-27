@@ -20,7 +20,7 @@ class _MyAppState extends State<MyApp> {
   @override
   void initState() {
     Repo().getData();
-    print("init state");
+    print("init dummy state");
     super.initState();
   }
 
@@ -58,7 +58,10 @@ class _MyAppState extends State<MyApp> {
               width: 200,
               height: 100,
             ),
-          )
+          ),
+          Container(
+            child: Text("Hellow world container"),
+          ),
         ],
       ),
       floatingActionButton: FloatingActionButton(
